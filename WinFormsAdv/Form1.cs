@@ -65,7 +65,17 @@ namespace WinFormsAdv
 
         private void 확대하기축소하기기본값복원ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            toolStripProgressBar1.Value = 0;
+            toolStripProgressBar1.Value = 50;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 열기ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
