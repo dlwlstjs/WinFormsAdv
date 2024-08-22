@@ -46,5 +46,26 @@ namespace WinFormsAdv
         {
             System.Diagnostics.Process.Start("https://learn.microsoft.com/ko-kr/visualstudio/ide/not-in-toc/welcome-to-visual-studio-docs?view=vs-2022&f1url=%3FappId%3DDev17IDEF1%26l%3DKO-KR%26k%3Dk(vs.ViewHelp)%3Bk(TargetFrameworkMoniker-.NETFramework%2CVersion%253Dv4.7.2)%3Bk(DevLang-csharp)%26rd%3Dtrue");
         }
+
+        private void 확대ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (toolStripProgressBar1.Maximum < toolStripProgressBar1.Value - toolStripProgressBar1.Step)
+            {
+                toolStripProgressBar1.Value = toolStripProgressBar1.Maximum;
+            } else
+            {
+                toolStripProgressBar1.Value -= toolStripProgressBar1.Step;
+            }
+        }
+
+        private void 축소ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            toolStripProgressBar1.Value -= 10;
+        }
+
+        private void 확대하기축소하기기본값복원ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            toolStripProgressBar1.Value = 0;
+        }
     }
 }
