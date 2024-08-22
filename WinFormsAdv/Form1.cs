@@ -41,5 +41,10 @@ namespace WinFormsAdv
         {
             Application.Exit();
         }
+
+        private void 도움말보기ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://learn.microsoft.com/ko-kr/visualstudio/ide/not-in-toc/welcome-to-visual-studio-docs?view=vs-2022&f1url=%3FappId%3DDev17IDEF1%26l%3DKO-KR%26k%3Dk(vs.ViewHelp)%3Bk(TargetFrameworkMoniker-.NETFramework%2CVersion%253Dv4.7.2)%3Bk(DevLang-csharp)%26rd%3Dtrue");
+        }
     }
 }
